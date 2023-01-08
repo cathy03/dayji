@@ -22,7 +22,7 @@ body{
 }
 h1{
   font-weight: 700;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 40px;
 
   text-align: center;
@@ -129,6 +129,75 @@ span{
   margin: 0 auto;
 }
 
+.content-section .scroll-list{
+  position: relative;
+  margin: 0 auto;
+  height: 374px;
+}
+.content-section .scroll-img{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 249px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.content-section .scroll-img img{
+  max-width: 249px;
+
+  -webkit-animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+  -webkit-animation-name: scrolling;
+  animation-name: scrolling;
+  -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  27.33% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  33.33% {
+    -webkit-transform: translate3d(0, -16.66%, 0);
+    transform: translate3d(0, -16.66%, 0);
+    visibility: visible;
+  }
+  60.66% {
+    -webkit-transform: translate3d(0, -16.66%, 0);
+    transform: translate3d(0, -16.66%, 0);
+    visibility: visible;
+  }
+  66.66% {
+    -webkit-transform: translate3d(0, -34%, 0);
+    transform: translate3d(0, -34%, 0);
+    visibility: visible;
+  }
+  94% {
+    -webkit-transform: translate3d(0, -34%, 0);
+    transform: translate3d(0, -34%, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.content-section .scroll-list video{
+  max-width: 249px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 40px 40px 0 0;
+}
+
 .content-section .emoji-list{
   height: 440px;
 }
@@ -149,8 +218,8 @@ span{
     animation-timing-function: linear;
   -webkit-animation-name: ticker;
   animation-name: ticker;
-  -webkit-animation-duration: 30s;
-    animation-duration: 30s;
+  -webkit-animation-duration: 20s;
+    animation-duration: 20s;
 }
 
 button{
